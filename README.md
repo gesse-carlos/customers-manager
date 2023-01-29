@@ -1,6 +1,7 @@
 # How to Start
 
  - Make sure you have Docker and Python in your machine;
+ - Install all dependencies running the `pip install -r requirements.txt` command;
  - Open the docker folder and run the `docker compose up` command;
  - In the root folder, run the `python manage.py runserver`;
 
