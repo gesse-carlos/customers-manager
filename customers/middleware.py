@@ -15,7 +15,6 @@ class CepValidate:
     def process_view(self, request, func, args, kwargs):
         cep = request.POST.get('CEP')
         if cep is not None:
-            print(cep)
             cep_serializer = cep.replace("-", "").replace(".", "").replace(" ", "")
             if len(cep_serializer) == 8:
                 viacep = requests.get(f'https://viacep.com.br/ws/{cep_serializer}/json/')
