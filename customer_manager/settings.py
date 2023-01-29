@@ -74,12 +74,14 @@ WSGI_APPLICATION = 'customer_manager.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': '/path/to/my.cnf',
-        },
-    }
+   'default': {
+      'ENGINE': 'django.db.backends.mysql',
+      'NAME': 'db',
+      'USER': 'user',
+      'PASSWORD': 'password',
+      'HOST': '127.0.0.1',
+      'PORT': '3306',
+   }
 }
 
 
